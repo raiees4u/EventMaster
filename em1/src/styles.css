@@ -1,0 +1,101 @@
+/* General Reset for Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased; /* Smooth fonts on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts on macOS */
+  background-color: #f9f9f9; /* Subtle neutral background color */
+  color: #333; /* Default text color for better readability */
+  line-height: 1.6; /* Improve text legibility */
+}
+
+/* Code Styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #f4f4f4; /* Light gray background for code blocks */
+  padding: 0.2rem 0.4rem; /* Add spacing around code */
+  border-radius: 4px; /* Rounded edges for aesthetic */
+  color: #d6336c; /* Eye-catching color for code text */
+  font-size: 0.95rem; /* Slightly smaller font size for code */
+}
+
+/* Main container for the Home Page */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff; /* Cleaner white background */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  transition: box-shadow 0.3s ease;
+}
+
+.home-page:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle elevation on hover */
+}
+
+/* Page heading */
+.home-page h1 {
+  text-align: center;
+  font-size: 3rem; /* Slightly larger for emphasis */
+  color: #222; /* Darker shade for contrast */
+  margin-bottom: 50px;
+}
+
+/* Error message style */
+.home-page .error {
+  color: #e63946; /* Softer red for error text */
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Container for event cards */
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Flexible grid layout */
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Styling for individual event cards */
+.event-card {
+  background-color: #ffffff;
+  border-radius: 12px; /* Consistent rounding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px); /* Subtle lift on hover */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* More pronounced shadow */
+}
+
+/* Event card heading */
+.event-card h2 {
+  font-size: 1.8rem; /* Slightly larger for readability */
+  color: #222; /* Consistent with headings */
+  margin-bottom: 12px;
+}
+
+/* Event card description */
+.event-card p {
+  font-size: 1rem; /* Balanced text size */
+  color: #555; /* Softer text color */
+  line-height: 1.7; /* Improved readability */
+}
+
+/* Styling for event date and location */
+.event-card p strong {
+  font-weight: bold;
+  color: #444; /* Slight contrast for emphasis */
+}
+
+/* Loading text style */
+.home-page p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666; /* Neutral text color */
+}

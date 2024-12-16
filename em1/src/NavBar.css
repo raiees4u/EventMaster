@@ -1,0 +1,139 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+  background: linear-gradient(135deg, #c3ccd4, #130b18); /* Gradient background for a modern look */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a {
+  font-size: 2rem; /* Larger for emphasis */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px; /* Slight spacing for clarity */
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust height as needed */
+  width: auto;
+  margin-right: 1rem; /* Space between the logo image and text */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
+  filter: brightness(1.2); /* Enhance brightness on hover */
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Navbar links styling */
+li {
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  background-color: #555; /* Darker hover effect */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Button styling for sign-out */
+button {
+  background-color: #ff4c4c;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63946; /* Slightly darker red on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Navbar toggle button */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggle:hover span {
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #333;
+    padding: 1rem;
+    width: 220px; /* Slightly larger for spacing */
+    border-radius: 8px; /* More rounded for modern design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}

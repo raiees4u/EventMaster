@@ -1,0 +1,93 @@
+/* Container for the signup form */
+.signup-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading style */
+  .signup-page h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form fields */
+  .signup-page form div {
+    margin-bottom: 15px;
+  }
+  
+  /* Label for inputs */
+  .signup-page label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Input styles */
+  .signup-page input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .signup-page input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Submit button styles */
+  .signup-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-page button:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-page button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error message style */
+  .signup-page .error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Link to sign in page */
+  .signup-page p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signup-page p a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-page p a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,89 @@
+/* General App Styles */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Add a default font */
+  background-color: #f4f4f4; /* Neutral background for better contrast */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Standardize box model */
+}
+
+/* Logo Styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+/* Add hover effect for the logo */
+.App-logo:hover {
+  transform: scale(1.1) rotate(15deg); /* Slight enlargement and tilt */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header Styles */
+.App-header {
+  background: linear-gradient(135deg, #282c34, #3c3f48); /* Add gradient for visual interest */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(214, 161, 161, 0.5); /* Subtle text shadow */
+}
+
+/* Link Styles */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.App-link:hover {
+  color: #3a9269; /* Slightly darker hover color */
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Keyframes for Logo Animation */
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Accessibility and Media Query Adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Smaller font size on mobile */
+    padding: 1rem;
+  }
+
+  .App-logo {
+    height: 50vmin; /* Larger logo for better visibility */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: #1c1e22; /* Dark mode background */
+  }
+
+  .App-link {
+    color: #bbdefb; /* Softer link color */
+  }
+
+  .App-header {
+    background: linear-gradient(135deg, #1c1e22, #282c34); /* Subtle gradient for dark mode */
+  }
+}

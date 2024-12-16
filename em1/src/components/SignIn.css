@@ -1,0 +1,102 @@
+/* Container for the sign-in form */
+.signin-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading style */
+.signin-page h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form fields */
+.signin-page form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-page form div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Label for inputs */
+.signin-page label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input styles */
+.signin-page input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+}
+
+.signin-page input:focus {
+    border-color: #2196F3; /* Blue focus color */
+    outline: none;
+}
+
+/* Submit button styles */
+.signin-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3; /* Blue button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.signin-page button:hover {
+    background-color: #19d263; /* Darker blue on hover */
+}
+
+.signin-page button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Error message style */
+.signin-page .error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Link to sign up page */
+.signin-page p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signin-page p a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signin-page p a:hover {
+    text-decoration: underline;
+}
